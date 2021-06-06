@@ -20,11 +20,13 @@ body{
 .btns{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+
 }
 
 .btn{
 	padding: 10px;
-	margin: 1em;
+	width: 120px;
+	margin: 1em auto;
 	background-color: #7971ea;
 	border: none;
 	outline: none;
@@ -41,10 +43,13 @@ body{
 	width: 80%;
 	display: flex;
 	margin: 0 auto;
+	border: 5px solid #7971ea;
+	border-radius: 5px;
+	margin-bottom: 1em;
 }
 .modal{
 	position: absolute;
-	top: -100vh;
+	top: -150vh;
 	transition: all 1s;
 	z-index: 400;
 	background-color: rgb(0, 0, 0, .3);
@@ -53,4 +58,36 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+}
+
+.modal p{
+	text-align: center;
+	margin-bottom: 2em;
+}
+.close{
+	width: 100px;
+	height: 40px;
+	background-color: #7971ea;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bolder;
+}
+
+@media screen and (min-width: 640px) {
+	.meme{
+		height: 300px;
+		width: 300px;
+	}
+	.btn{
+		width: 100px;
+	}
+	.btns{
+		align-content: center;
+		justify-content: center;
+	}
 }

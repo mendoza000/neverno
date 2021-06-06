@@ -51,4 +51,6 @@ const mover = () => {
 const show = () =>{
 	modal.style.top = "0"
 }
-
+const closeModal = () => {
+	modal.style.top = "-150vh"
+}
